@@ -1,0 +1,135 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+19/10/04 13:42:49 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/10/04 13:42:51 INFO Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+19/10/04 13:42:51 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+19/10/04 13:42:51 WARN mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+19/10/04 13:42:51 INFO input.FileInputFormat: Total input paths to process : 1
+19/10/04 13:42:51 INFO mapreduce.JobSubmitter: number of splits:1
+19/10/04 13:42:52 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1690679256_0001
+19/10/04 13:42:53 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+19/10/04 13:42:53 INFO mapreduce.Job: Running job: job_local1690679256_0001
+19/10/04 13:42:53 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+19/10/04 13:42:53 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+19/10/04 13:42:53 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/10/04 13:42:53 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+19/10/04 13:42:53 INFO mapred.LocalJobRunner: Waiting for map tasks
+19/10/04 13:42:53 INFO mapred.LocalJobRunner: Starting task: attempt_local1690679256_0001_m_000000_0
+19/10/04 13:42:53 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+19/10/04 13:42:53 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/10/04 13:42:53 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+19/10/04 13:42:53 INFO mapred.MapTask: Processing split: file:/home/cloudera/workspace/training/input/fbMutualFriendIp:0+86951
+19/10/04 13:42:53 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+19/10/04 13:42:53 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+19/10/04 13:42:53 INFO mapred.MapTask: soft limit at 83886080
+19/10/04 13:42:53 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+19/10/04 13:42:53 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+19/10/04 13:42:53 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+19/10/04 13:42:54 INFO mapreduce.Job: Job job_local1690679256_0001 running in uber mode : false
+19/10/04 13:42:54 INFO mapreduce.Job:  map 0% reduce 0%
+19/10/04 13:42:54 INFO mapred.LocalJobRunner: 
+19/10/04 13:42:54 INFO mapred.MapTask: Starting flush of map output
+19/10/04 13:42:54 INFO mapred.MapTask: Spilling map output
+19/10/04 13:42:54 INFO mapred.MapTask: bufstart = 0; bufend = 4902041; bufvoid = 104857600
+19/10/04 13:42:54 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26153428(104613712); length = 60969/6553600
+19/10/04 13:42:54 INFO mapred.MapTask: Finished spill 0
+19/10/04 13:42:54 INFO mapred.Task: Task:attempt_local1690679256_0001_m_000000_0 is done. And is in the process of committing
+19/10/04 13:42:54 INFO mapred.LocalJobRunner: map
+19/10/04 13:42:54 INFO mapred.Task: Task 'attempt_local1690679256_0001_m_000000_0' done.
+19/10/04 13:42:54 INFO mapred.LocalJobRunner: Finishing task: attempt_local1690679256_0001_m_000000_0
+19/10/04 13:42:54 INFO mapred.LocalJobRunner: map task executor complete.
+19/10/04 13:42:54 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+19/10/04 13:42:54 INFO mapred.LocalJobRunner: Starting task: attempt_local1690679256_0001_r_000000_0
+19/10/04 13:42:54 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+19/10/04 13:42:54 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/10/04 13:42:54 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+19/10/04 13:42:55 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@569c66d2
+19/10/04 13:42:55 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=972095488, maxSingleShuffleLimit=243023872, mergeThreshold=641583040, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+19/10/04 13:42:55 INFO reduce.EventFetcher: attempt_local1690679256_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+19/10/04 13:42:55 INFO mapreduce.Job:  map 100% reduce 0%
+19/10/04 13:42:55 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1690679256_0001_m_000000_0 decomp: 4952793 len: 4952797 to MEMORY
+19/10/04 13:42:55 INFO reduce.InMemoryMapOutput: Read 4952793 bytes from map-output for attempt_local1690679256_0001_m_000000_0
+19/10/04 13:42:55 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 4952793, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->4952793
+19/10/04 13:42:55 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+19/10/04 13:42:55 INFO mapred.LocalJobRunner: 1 / 1 copied.
+19/10/04 13:42:55 INFO reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+19/10/04 13:42:55 INFO mapred.Merger: Merging 1 sorted segments
+19/10/04 13:42:55 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 4952785 bytes
+19/10/04 13:42:55 INFO reduce.MergeManagerImpl: Merged 1 segments, 4952793 bytes to disk to satisfy reduce memory limit
+19/10/04 13:42:55 INFO reduce.MergeManagerImpl: Merging 1 files, 4952797 bytes from disk
+19/10/04 13:42:55 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+19/10/04 13:42:55 INFO mapred.Merger: Merging 1 sorted segments
+19/10/04 13:42:55 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 4952785 bytes
+19/10/04 13:42:55 INFO mapred.LocalJobRunner: 1 / 1 copied.
+19/10/04 13:42:55 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+19/10/04 13:42:56 INFO mapred.Task: Task:attempt_local1690679256_0001_r_000000_0 is done. And is in the process of committing
+19/10/04 13:42:56 INFO mapred.LocalJobRunner: 1 / 1 copied.
+19/10/04 13:42:56 INFO mapred.Task: Task attempt_local1690679256_0001_r_000000_0 is allowed to commit now
+19/10/04 13:42:56 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1690679256_0001_r_000000_0' to file:/home/cloudera/workspace/training/output/_temporary/0/task_local1690679256_0001_r_000000
+19/10/04 13:42:56 INFO mapred.LocalJobRunner: reduce > reduce
+19/10/04 13:42:56 INFO mapred.Task: Task 'attempt_local1690679256_0001_r_000000_0' done.
+19/10/04 13:42:56 INFO mapred.LocalJobRunner: Finishing task: attempt_local1690679256_0001_r_000000_0
+19/10/04 13:42:56 INFO mapred.LocalJobRunner: reduce task executor complete.
+19/10/04 13:42:56 WARN mapred.LocalJobRunner: job_local1690679256_0001
+java.lang.NoClassDefFoundError: org/apache/http/client/methods/HttpUriRequest
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:573)
+Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.HttpUriRequest
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 1 more
+Exception in thread "Thread-19" java.lang.NoClassDefFoundError: org/apache/http/client/methods/HttpUriRequest
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:589)
+Caused by: java.lang.ClassNotFoundException: org.apache.http.client.methods.HttpUriRequest
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 1 more
+19/10/04 13:42:57 INFO mapreduce.Job:  map 100% reduce 100%
+19/10/04 13:42:57 INFO mapreduce.Job: Job job_local1690679256_0001 failed with state FAILED due to: NA
+19/10/04 13:42:57 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=10079894
+		FILE: Number of bytes written=15710135
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=522
+		Map output records=15243
+		Map output bytes=4902041
+		Map output materialized bytes=4952797
+		Input split bytes=126
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=14057
+		Reduce shuffle bytes=4952797
+		Reduce input records=15243
+		Reduce output records=14057
+		Spilled Records=30486
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=120
+		Total committed heap usage (bytes)=383655936
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=86951
+	File Output Format Counters 
+		Bytes Written=184850
+
